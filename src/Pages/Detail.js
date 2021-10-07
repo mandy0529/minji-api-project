@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import {useGlobalContext} from '../contexts/Context';
 import styled from 'styled-components';
 import {Link, useParams} from 'react-router-dom';
-import Loader from '../components/Loader';
+import {Loader} from '../components';
 
 const Detail = () => {
   const {loading, singleList, singleData} = useGlobalContext();

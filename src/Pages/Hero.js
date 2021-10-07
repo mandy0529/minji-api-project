@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {useGlobalContext} from '../contexts/Context';
 import styled from 'styled-components';
-import Loader from '../components/Loader';
+import {Loader} from '../components';
 
 const Hero = () => {
   const {loading, list} = useGlobalContext();

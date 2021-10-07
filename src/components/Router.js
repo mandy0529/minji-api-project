@@ -1,10 +1,8 @@
 import React from 'react';
 import {BrowserRouter, Route, Link, Redirect} from 'react-router-dom';
-import {useGlobalContext} from '../contexts/Context';
+import {Error} from '.';
 import Detail from '../Pages/Detail';
 import Home from '../Pages/Home';
-import Error from './Error';
-import Loader from './Loader';
 
 const Router = () => {
   return (
