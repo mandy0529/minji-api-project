@@ -1,8 +1,9 @@
 import React from 'react';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
+import {BrowserRouter, Route, Link, Redirect} from 'react-router-dom';
 import {useGlobalContext} from '../contexts/Context';
 import Detail from '../Pages/Detail';
 import Home from '../Pages/Home';
+import Error from './Error';
 import Loader from './Loader';
 
 const Router = () => {
@@ -10,6 +11,7 @@ const Router = () => {
     <BrowserRouter>
       <Route path="/" exact component={Home} />
       <Route path="/:id" component={Detail} />
+      <Route path="*" exact component={Error} />
     </BrowserRouter>
   );
 };
